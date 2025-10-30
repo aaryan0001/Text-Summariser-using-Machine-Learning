@@ -1,0 +1,92 @@
+/* static/styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff; /* Add background color here */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: box-shadow 0.3s;
+    color: #000; /* Set text color to black */
+}
+
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin-bottom: 30px;
+}
+
+textarea, input[type="file"], input[type="number"], input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+input[type="number"], input[type="submit"] {
+    border: none;
+    border-radius: 25px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="number"]:hover, input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 0;
+    border-top: 2px solid #007bff;
+}
+
+p {
+    line-height: 1.6;
+    /* Adjusted text color for better contrast */
+    color: #000;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    textarea, input[type="file"], input[type="number"], input[type="submit"] {
+        width: 100%;
+    }
+}
